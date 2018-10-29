@@ -1,0 +1,28 @@
+/* pages/about/about.wxss */
+
+page {
+    background: #FFFFFF;
+}
+
+.page__hd {
+    padding-top: 100rpx;
+    padding-bottom: 100rpx; 
+    background: #FFFFFF;
+}
+
+.page__hd .page__title {
+    text-align: center;
+    font-size: 28px;
+    color: #3cc51f;
+    font-weight: 400;
+}
+
+.page__hd .page__desc {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+/* .page__bd {
+    margin-top: 100rpx;
+} */

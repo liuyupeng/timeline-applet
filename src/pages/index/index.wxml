@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="tip-text">
+        <icon type="info_circle" size="16"></icon> 长按可进行编辑和删除操作
+        <navigator hover-class="none" class="btn_plus pull-right" url="../timeline/save">
+            <image mode="widthFix" src="../../style/images/icon_add.png" background-size="cover"></image>新增一条
+        </navigator>
+    </view>
+
+    <view class="page__bd">
+        <view class="timeline" wx:if="{{list.length}}">
+            <view class="timeline-item" wx:for="{{list}}" wx:key="id">
+                <view class="timeline-item_icon">
+                    <image mode="widthFix" class="timeline-item_icon_img" src="{{item.theme_info.icon}}" />
+                </view>
+
+                <view class="timeline-item_content" data-id="{{item.id}}" bindlongpress="bindItemTap">
+                    <view class="timeline-item_theme">{{item.title_formatter}}</view>
+                    <view class="timeline-item_context">{{item.context}}</view>
+                    <view class="timeline-item_date">{{item.date_formatter}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="page__fd">
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{is_show_text}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">{{text_msg}}</view>
+        </view>
+    </view>
+</view>

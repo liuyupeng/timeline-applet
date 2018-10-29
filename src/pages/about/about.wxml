@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">{{title_text}}</view>
+        <view class="page__desc">{{desc_text}}</view>
+    </view>
+
+    <view class="page__bd">
+        
+    </view>
+</view>

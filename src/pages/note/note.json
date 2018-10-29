@@ -1,0 +1,5 @@
+{
+    "navigationBarTitleText": "记事本",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+}

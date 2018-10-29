@@ -1,0 +1,36 @@
+<!--pages/note/note.wxml-->
+
+<view class="page">
+    <view class="tip-text">
+        <icon type="info_circle" size="16"></icon> 长按可复制记事本内容
+        <navigator hover-class="none" class="btn_plus pull-right" url="../note/save">
+            <image mode="widthFix" src="../../style/images/icon_add.png" background-size="cover"></image>新增一条
+        </navigator>
+    </view>
+
+    <view class="page__bd">
+        <view class="note-list" wx:if="{{list.length}}">
+            <view class="note-item" wx:for="{{list}}" wx:for-index="index" wx:key="id">
+                <view class="note-item_title" wx:if="{{item.title_formatter != ''}}">
+                    <image mode="widthFix" src="{{item.theme_info.icon}}" wx:if="{{item.theme_id != 0}}"></image>{{item.title_formatter}}
+                </view>
+                <view class="note-item_context" bindlongpress="bindCopy" data-id="{{item.id}}" data-index="{{index}}">{{item.context}}</view>
+                <view class="note-item_meta">
+                    <view class="note-item_meta_time">
+                        <image mode="widthFix" src="../../style/images/icon_biao.png"></image>{{item.date_formatter}}
+                    </view>
+                    <view class="note-item_meta_opec" data-id="{{item.id}}" data-index="{{index}}" bindtap="bindOpec">
+                        <image mode="widthFix" src="../../style/images/icon_opec.png"></image>操作
+                        </view>
+                    <view class="clear"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="page__fd">
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{is_show_text}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">{{text_msg}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,75 @@
+/* pages/note/note.wxss */
+
+.note-list {
+    padding: 15px 0;
+}
+
+.note-item {
+    padding: 0;
+    padding-top: 8px;
+    color: #333;
+    margin-bottom: 15px;
+    background-color: #FFFFFF;
+    border-top: 1rpx solid #e5e5e5;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.note-item:last-child {
+    margin-bottom: 0;
+}
+
+.note-item_title {
+    height: 22px;
+    font-size: 16px;
+    padding: 5px 15px 6px;
+}
+
+.note-item_title image {
+    width: 18px;
+    margin-right: 5px;
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+}
+
+.note-item_context {
+    font-size: 15px;
+    padding: 5px 15px 10px;
+}
+
+.note-item_meta {
+    color: #999;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-top: 1rpx solid #e5e5e5;
+}
+
+.note-item_meta image {
+    width: 16px;
+    margin-right: 3px;
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+}
+
+.note-item_meta .note-item_meta_time {
+    float: left;
+}
+
+.note-item_meta .note-item_meta_opec {
+    float: right;
+}
+
+
+.weui-media-box {
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    border-top: 1rpx solid #e5e5e5;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+
+.weui-media-box:before{
+    content: none;
+}
+

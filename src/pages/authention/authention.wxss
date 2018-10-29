@@ -1,0 +1,39 @@
+/* pages/authention/authention.wxss */
+
+page {
+    background: #FFFFFF;
+}
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120rpx 0 30rpx;
+}
+
+.userinfo-avatar {
+    width: 160rpx;
+    height: 160rpx;
+    margin: 0 0 20rpx; 
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.userinfo-nickname {
+    font-size: 16px;
+    color: #333;
+}
+
+.weui-btn-area {
+    margin-top: 80px;
+}
+
+.weui-btn {
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background: #00B8EE;
+    border-color: #00B8EE;
+}

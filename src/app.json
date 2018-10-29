@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/note/note",
+        "pages/note/save",
+        "pages/about/about",
+        "pages/timeline/save",
+        "pages/authention/authention"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#333333",
+        "navigationBarTitleText": "时光记事本",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#2c2c2c",
+        "borderStyle": "#F2F2F2",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "时光轴",
+                "iconPath": "style/images/icon_time.png",
+                "selectedIconPath": "style/images/icon_time_act.png"
+            },
+            {
+                "pagePath": "pages/note/note",
+                "text": "记事本",
+                "iconPath": "style/images/icon_note.png",
+                "selectedIconPath": "style/images/icon_note_act.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "关于",
+                "iconPath": "style/images/icon_about.png",
+                "selectedIconPath": "style/images/icon_about_act.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,45 @@
+<!--pages/note/save.wxml-->
+
+<view class="page">
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{topTipText}}">{{topTipText}}</view>
+    <view class="page__bd">
+        <form bindsubmit="bindForm" report-submit="true">
+            <view class="weui-cells__title">编辑记事本内容</view>
+            
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__bd">
+                        <textarea class="weui-textarea input_context" name="context" value="{{info.context}}" />
+                    </view>
+                </view>
+                
+                <view class="weui-cell weui-cell_select">
+                    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                        <view class="weui-label justify_box">主题</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker bindchange="bindThemeChange" value="{{themeIndex}}" range="{{themeItems}}">
+                            <view class="weui-select weui-select_in-select-after" wx:if="{{themeIndex > 0}}">{{themeItems[themeIndex]}}</view>
+                             <view class="weui-select weui-select_in-select-after tip-input" wx:else>非必选</view>
+                        </picker>
+                    </view>
+                </view>
+                
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label justify_box">标题</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="title" placeholder="选填" value="{{info.title}}" />
+                    </view>
+                </view>
+            </view>
+
+            <view class="weui-btn-area">
+                <button class="weui-btn" disabled wx:if="{{btn_disabled}}">确认提交</button>
+                <button class="weui-btn" formType="submit" wx:else>确认提交</button>
+            </view>
+        </form>
+    </view>
+</view>
+

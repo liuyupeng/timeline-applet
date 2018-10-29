@@ -1,0 +1,34 @@
+/* pages/note/save.wxss */
+
+page {
+    background-color: #eeeeee;
+}
+
+input, picker, textarea {
+    font-size: 16px;
+}
+
+.input_context {
+    padding: 5px 0;
+}
+
+.weui-label {
+    width: 3.2em;
+    color: #666;
+    font-size: 16px;
+    padding-right: 1.5em;
+}
+
+.weui-select {
+    border-right: 0;
+}
+
+.weui-btn-area {
+    margin-top: 35px;
+}
+
+.weui-btn {
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: #FFFFFF;
+}
